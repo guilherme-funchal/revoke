@@ -1,0 +1,26 @@
+{
+  "name": "@credo-ts/indy-besu-vdr",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "yarn run clean && yarn run compile",
+    "clean": "rimraf ./build",
+    "compile": "tsc -p tsconfig.build.json",
+    "test": "jest"
+  },
+  "main": "build/index",
+  "repository": "https://github.com/hyperledger/aries-framework-javascript",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@credo-ts/anoncreds": "0.5.8",
+    "@credo-ts/askar": "0.5.8",
+    "@credo-ts/core": "0.5.8",
+    "ethers": "^6.8.1",
+    "indy2-vdr": "file:vdr-pkg"
+  },
+  "devDependencies": {
+    "@hyperledger/aries-askar-nodejs": "^0.2.3",
+    "@types/indy-sdk": "*",
+    "rimraf": "^4.4.0",
+    "typescript": "~5.5.3"
+  }
+}

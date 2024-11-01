@@ -1,0 +1,36 @@
+{
+  "name": "revocation-issue-anoncreds",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "license": "ISC",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "tsc && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "@types/node": "^20.14.11",
+    "@types/ref-array-di": "^1.2.8",
+    "@types/ref-struct-di": "^1.1.12",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@credo-ts/anoncreds": "0.5.8",
+    "@credo-ts/askar": "0.5.8",
+    "@credo-ts/indy-vdr": "0.5.8",
+    "@credo-ts/node": "0.5.8",
+    "@hyperledger/anoncreds-nodejs": "^0.2.2",
+    "@hyperledger/aries-askar-nodejs": "^0.2.3",
+    "@hyperledger/indy-vdr-nodejs": "^0.2.2",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5"
+  },
+  "packageManager": "yarn@4.5.0+sha512.837566d24eec14ec0f5f1411adb544e892b3454255e61fdef8fd05f3429480102806bac7446bc9daff3896b01ae4b62d00096c7e989f1596f2af10b927532f39"
+}
