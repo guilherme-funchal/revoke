@@ -2,7 +2,7 @@
 
 Este projeto foi criado para reproduzir um problema com revogação de credenciais na biblioteca @credo-ts/core. Siga as instruções abaixo para configurar e executar o projeto.
 
-## Prerequisit0s
+## Prerequisitos
 
 - Node.js e npm instalado
 - Servidor de tails rodando conforme o diretório tailserver
