@@ -1,44 +1,38 @@
-# Reproduce Credential Revocation Issue
+# Reproduzir a revogação
 
-This project is designed to reproduce an issue with credential revocation in the @credo-ts/core library. Follow the instructions below to set up and run the project.
+Este projeto foi criado para reproduzir um problema com revogação de credenciais na biblioteca @credo-ts/core. Siga as instruções abaixo para configurar e executar o projeto.
 
-## Prerequisites
+## Prerequisitos
 
-- Node.js and npm installed on your machine
-- A running Tails Server with `tailsServerBaseUrl` and `tailsDirectoryPath` configured
+- Node.js e npm instalado
+- Servidor de tails rodando conforme o diretório tailserver
 
-## Installation
+## Instalação
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/tarunvaddeSoul/credo-anoncreds-revocation-issue.git
-    cd credo-anoncreds-revocation-issue
-    ```
-
-2. Install the dependencies:
+2. Instalar as dependências:
     ```bash
     npm install
     ```
 
 ## Running the Project
 
-1. Create a `.env` file in the root of the project with the following content:
+1. Ajustar o arquivo `.env` conforme abaixo:
     ```env
     TAILS_SERVER_BASE_URL=<your_tails_server_base_url>
     TAILS_DIRECTORY_PATH=<your_tails_directory_path>
     ```
 
-2. Start the project:
+2. Iniciar projeto:
     ```bash
     npm start
     ```
 
-The `npm start` command will build and start the project, executing the following steps:
+O comando `npm start` criará e iniciará o projeto, executando as seguintes etapas:
 
-1. The issuer will create a schema.
-2. The issuer will create a credential definition.
-3. The issuer will create a revocation registry definition and a revocation status list.
-4. A connection will be established between the issuer and the holder.
-5. The issuer will issue 5 anoncreds credentials to the holder.
-6. The issuer will then attempt to revoke these 5 credentials.
+1. O emissor criará um esquema.
+2. O emissor criará uma definição de credencial.
+3. O emissor criará uma definição de registro de revogação e uma lista de status de revogação.
+4. Uma conexão será estabelecida entre o emissor e o titular.
+5. O emissor emitirá 5 credenciais anoncreds para o titular.
+6. O emissor tentará revogar essas 5 credenciais.
 

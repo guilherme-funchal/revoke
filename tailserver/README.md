@@ -1,5 +1,15 @@
-<h1 align="center"><b>Sample tails file server</b></h1>
+<h1 align="center"><b>Servidor de arquivo tails de exemplo</b></h1>
 
-This is a very simple server that can be used to host AnonCreds tails files. It is intended to be used only for development purposes.
+Este é um servidor muito simples que pode ser usado para hospedar arquivos tails do AnonCreds. Ele deve ser usado apenas para fins de desenvolvimento.
 
-It offers a single endpoint at the root that takes an URI-encoded `tailsFileId` as URL path and allows to upload (using PUT method and a through a multi-part encoded form) or retrieve a tails file (using GET method).
+Ele oferece um único ponto de extremidade na raiz que recebe um `tailsFileId` codificado em URI como caminho de URL e permite fazer upload (usando o método PUT e um formulário codificado em várias partes) ou recuperar um arquivo tails (usando o método GET).
+
+1.Para instalar: 
+```bash
+#npm install
+```
+
+2.Para executar: 
+```bash
+#npm start
+```
